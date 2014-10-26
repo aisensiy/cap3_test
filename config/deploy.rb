@@ -1,5 +1,5 @@
 # config valid only for Capistrano 3.1
-lock '3.1.0'
+lock '3.2.1'
 
 set :application, 'cap3_test'
 set :repo_url, 'git@github.com:aisensiy/cap3_test.git'
