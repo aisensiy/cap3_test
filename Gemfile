@@ -29,6 +29,7 @@ gem 'spring',        group: :development
 group :development do
   gem 'capistrano'
   gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
 end
 
 # Use ActiveModel has_secure_password
