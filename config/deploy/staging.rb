@@ -8,6 +8,11 @@ role :app, %w{deploy@192.241.198.90:1000}
 # role :web, %w{deploy@example.com}
 # role :db,  %w{deploy@example.com}
 
+set :stage, :staging
+
+set :rails_env, :staging
+set :enable_ssl, false
+
 # Extended Server Syntax
 # ======================
 # This can be used to drop a more detailed server
