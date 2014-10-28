@@ -5,7 +5,7 @@ set :deploy_user, 'deploy'
 set :scm, :git
 set :repo_url, 'git@github.com:aisensiy/cap3_test.git'
 
-set :deploy_to, '~/cap3_test'
+set :deploy_to, '/home/deploy/cap3_test'
 
 # setup rbenv.
 set :rbenv_type, :user
@@ -17,7 +17,7 @@ set :rbenv_map_bins, %w{rake gem bundle ruby rails}
 set :keep_releases, 5
 
 # files we want symlinking to specific entries in shared
-set :linked_files, %w{config/database.yml}
+set :linked_files, %w{config/database.yml config/secrets.yml}
 
 # dirs we want symlinking to shared
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
