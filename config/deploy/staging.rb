@@ -9,6 +9,11 @@ role :app, %w{deploy@192.241.198.90:1000}
 # role :db,  %w{deploy@example.com}
 
 set :stage, :staging
+set :full_app_name, "#{fetch(:application)}_#{fetch(:stage)}"
+
+set :server_name, '192.241.198.90'
+set :port, 1000
+set :unicorn_worker_count, 2
 
 set :rails_env, :staging
 set :enable_ssl, false
